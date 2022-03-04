@@ -1,0 +1,28 @@
+:root{
+    --color-bg: #33FFA1;
+    --color-texte: #000000;
+    --color-text-offset:#091936;
+    --color-secondary: #1D53B3;
+}
+[color-theme="clair"]{
+    --color-bg: #33FFA1;
+    --color-texte: #000000;
+    --color-text-offset:#091936;
+    --color-secondary: #1D53B3;
+}
+[color-theme="sombre"]{
+    --color-bg: #091936;
+    --color-texte: #fefefe;
+    --color-text-offset: #ffffff;
+    --color-secondary: #1e1b27;
+    --color-btn: #72DBFE;
+   
+}
+
+/*type*/
+$font-text:"Crimson Text", serif;
+
+.contenair{
+    width: 100%;
+    max-width: 750px;
+}

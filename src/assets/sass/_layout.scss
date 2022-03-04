@@ -1,0 +1,35 @@
+/*layout*/
+@use "_var.scss" as v; 
+
+/*section*/
+.section{
+    padding: 0;
+    margin: auto;
+}
+.header{
+    width: 390px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.footer{
+    background-color: #fafafa;
+    padding: 50px;
+    color: #222;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;    
+    max-width: 100%;
+}
+img{
+    max-width: 100%;
+}
+@media (min-width: 600px){
+    .footer{
+      flex-direction: row;
+        
+    }
+  
+  }
