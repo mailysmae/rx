@@ -3,33 +3,123 @@
 
 /*section*/
 .section{
-    padding: 0;
+    padding: 20px;
     margin: auto;
 }
-.header{
-    width: 390px;
-    height: 40px;
-    font-size: 16px;
+.section--header{
+   max-width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
 }
 
-.footer{
-    background-color: #fafafa;
-    padding: 50px;
-    color: #222;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;    
+.section--footer{
+    border-top: 2px solid;
     max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+/*images*/
 img{
     max-width: 100%;
 }
+.dwm{
+    max-width: 100%;
+}
+.logo{
+    max-width: 100%;
+    position: absolute;
+    margin-right: 310px;
+}
+
+/*bouton darkmode et menu*/
+.bouton{
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    border:transparent;
+    background-color: transparent;
+    font-family: 'Lexend';
+    display: inline-block;
+    text-decoration: none;
+    text-indent: 100%;
+    white-space: nowrap;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    
+}
+.bouton--sombre{
+    position: relative;
+    right: 65px;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+
+    background-image: url(../images/darkmode/on.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+.bouton--sombre:hover{
+    background-image: url(../images/darkmode/off.png);
+
+}
+[color-theme="sombre"] .bouton--sombre{
+    background-image: url(../images/darkmode/ond.png);
+}
+[color-theme="sombre"] .bouton--sombre:hover{
+    background-image: url(../images/darkmode/offd.png);
+}
+.bouton__menu{
+
+    position: relative;
+    top: 6px;
+    left: 150px;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    
+    background-image: url(../images/menu/menu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.bouton__menu:hover{
+    background-image: url(../images/menu/menuh.png);
+
+}
+[color-theme="sombre"] .bouton__menu{
+    background-image: url(../images/menu/menud.png);
+}
+[color-theme="sombre"] .bouton__menu:hover{
+    background-image: url(../images/menu/menudh.png);
+}
+/*menu ouvert*/
+body[burger-menu] .menu{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 1000px;
+    width: 420px;
+    background: var(--color-text-offset);
+}
+
+body[burger-menu] .bouton__menu{
+    background-image: url(../images/menu/menu.png);
+}
+
+
+/*liens*/
+a{
+    text-decoration: none;
+    color: var(--color-texte);
+}
+
 @media (min-width: 600px){
-    .footer{
-      flex-direction: row;
-        
-    }
+   
   
   }

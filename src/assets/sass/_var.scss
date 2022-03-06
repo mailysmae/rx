@@ -1,22 +1,20 @@
 :root{
-    --color-bg: #33FFA1;
+    --color-bg: #fefefe;
     --color-texte: #000000;
-    --color-text-offset:#091936;
+    --color-text-offset:#61008c;
     --color-secondary: #1D53B3;
 }
 [color-theme="clair"]{
-    --color-bg: #33FFA1;
+    --color-bg: #fefefe;
     --color-texte: #000000;
-    --color-text-offset:#091936;
+    --color-text-offset:#61008C;
     --color-secondary: #1D53B3;
 }
 [color-theme="sombre"]{
-    --color-bg: #091936;
+    --color-bg: #010101;
     --color-texte: #fefefe;
-    --color-text-offset: #ffffff;
+    --color-text-offset: #ffcc5A;
     --color-secondary: #1e1b27;
-    --color-btn: #72DBFE;
-   
 }
 
 /*type*/

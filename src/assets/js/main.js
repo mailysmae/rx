@@ -22,7 +22,7 @@ function toggleTheme(){
 }
 
 /*burger menu*/
-let menuButton = document.querySelector(".menu-button");
+let menuButton = document.querySelector(".bouton__menu");
 menuButton.addEventListener("click", toggleNavigation);
 
 function toggleNavigation(){
@@ -34,6 +34,7 @@ function toggleNavigation(){
         menuButton.innerHTML = "Retour";
     }
 }
+
 /*date*/
 let giveDate = document.querySelector(".copyright");
 let maintenant = new Date();

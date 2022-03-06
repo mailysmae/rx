@@ -2,25 +2,120 @@
 
 /*Nav et listes */
 .menu{ 
+    display: none;
+    text-decoration: none;
     list-style: none;
-    padding: 0;
-    margin-top: 50px;
-    text-align: bottom;
-    font-size: 14px;
- 
+   
 }
 .menu__el{
-    margin-bottom: 10px;
-  }
+    position: relative;
+    left: 10px;
+    bottom: 10px;
 
+}
+.menu__list {
+    position: relative;
+    list-style: none;
+    
+ }
+.menu__item{
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    top: 333px;
+    left: 10px;
+    color: var(--color-texte);
+    padding: 30px;
+ }
+
+/*reseaux*/
+
+  .reseau{
+      list-style: none;
+      display: flex; 
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-right: 10px;
+  }
+  .reseau__el {
+     padding: 10px;
+  
+  }
+  
+  .reseau__el a{
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+     
+  
+      background-image: url(../images/reseaux/insta.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+  
+  }
+  .reseau__el--insta a:hover{
+      background-image: url(../images/reseaux/instah.png);
+  }
+  .reseau__el--insta a:focus{
+      background-image: url(../images/reseaux/insta.png);
+  }
+  .reseau__el--pinterest a{
+      background-image: url(../images/reseaux/pinterest.png);
+  }
+  .reseau__el--pinterest a:hover{
+      background-image: url(../images/reseaux/pinteresth.png);
+  }
+  .reseau__el--pinterest a:focus{
+      background-image: url(../images/reseaux/pinterest.png);
+  }
+  .reseau__el--mail a{
+      background-image: url(../images/reseaux/mail.png);
+  }
+  .reseau__el--mail a:hover{
+      background-image: url(../images/reseaux/mailh.png);
+  }
+  .reseau__el--mail a:focus{
+      background-image: url(../images/reseaux/mail.png);
+  }
+  .reseau__el--behance a{
+      background-image: url(../images/reseaux/behance.png);
+  }
+  .reseau__el--behance a:hover{
+      background-image: url(../images/reseaux/behover.png);
+  }
+  .reseau__el--behance a:focus{
+      background-image: url(../images/reseaux/behance.png);
+  }
+  [color-theme="sombre"] .reseau__el--insta a{
+      background-image: url(../images/reseaux/instad.png);
+  }
+  [color-theme="sombre"] .reseau__el--pinterest a{
+      background-image: url(../images/reseaux/pinterestd.png);
+  }
+  [color-theme="sombre"] .reseau__el--mail a{
+      background-image: url(../images/reseaux/maild.png);
+  }
+  [color-theme="sombre"] .reseau__el--behance a{
+      background-image: url(../images/reseaux/behanced.png);
+  }
+  [color-theme="sombre"] .reseau__el--insta a:hover{
+      background-image: url(../images/reseaux/instadh.png);
+  }
+  [color-theme="sombre"] .reseau__el--pinterest a:hover{
+      background-image: url(../images/reseaux/pinterestdh.png);
+  }
+  [color-theme="sombre"] .reseau__el--mail a:hover{
+      background-image: url(../images/reseaux/maildh.png);
+  }
+  [color-theme="sombre"] .reseau__el--behance a:hover{
+      background-image: url(../images/reseaux/behoverd.png);
+  }
 @media (min-width: 600px){
 
-    .menu{
-      margin-top: 0;
-      display: flex;
-    }
-    .menu__el{
-      margin-bottom: 0;
-      margin-left: 10px;
-    }
+  
 }
