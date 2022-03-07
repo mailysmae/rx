@@ -2,19 +2,19 @@
     --color-bg: #fefefe;
     --color-texte: #000000;
     --color-text-offset:#61008c;
-    --color-secondary: #1D53B3;
+    --color-secondary: #8c002b;
 }
 [color-theme="clair"]{
     --color-bg: #fefefe;
     --color-texte: #000000;
     --color-text-offset:#61008C;
-    --color-secondary: #1D53B3;
+    --color-secondary: #8c002b;
 }
 [color-theme="sombre"]{
     --color-bg: #010101;
     --color-texte: #fefefe;
     --color-text-offset: #ffcc5A;
-    --color-secondary: #1e1b27;
+    --color-secondary: #5affc9;
 }
 
 /*type*/
@@ -23,4 +23,18 @@ $font-text:"Crimson Text", serif;
 .contenair{
     width: 100%;
     max-width: 750px;
+    padding: 0;
+    margin: auto;
+}
+@media (min-width: 900px){ 
+.contenair{
+    max-width: 900px;
+    
+}
+}
+@media (min-width: 1200px){ 
+.contenair{
+    max-width: 1300px;
+ 
+ }
 }

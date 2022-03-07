@@ -11,6 +11,7 @@
    display: flex;
    flex-direction: row;
    justify-content: space-between;
+ 
 }
 
 .section--footer{
@@ -19,18 +20,44 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
 }
 /*images*/
 img{
     max-width: 100%;
 }
 .dwm{
-    max-width: 100%;
+    max-width: 40px;
+}
+[color-theme="sombre"] .dwm{
+
+    background-image: url(../images/logob.svg);
 }
 .logo{
-    max-width: 100%;
-    position: absolute;
-    margin-right: 310px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: auto;
+    left: 20px;
+ 
+}
+[color-theme="sombre"] .logo{
+
+    background-image: url(../images/logod.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.carre{
+    background-image: url(../images/pc.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 300px;
+}
+[color-theme="sombre"] .carre{
+
+    background-image: url(../images/pcd.svg);
 }
 
 /*bouton darkmode et menu*/
@@ -52,7 +79,7 @@ img{
 }
 .bouton--sombre{
     position: relative;
-    right: 65px;
+    right: 85px;
     top: 0px;
     width: 40px;
     height: 40px;
@@ -74,7 +101,6 @@ img{
     background-image: url(../images/darkmode/offd.png);
 }
 .bouton__menu{
-
     position: relative;
     top: 6px;
     left: 150px;
@@ -119,7 +145,59 @@ a{
     color: var(--color-texte);
 }
 
-@media (min-width: 600px){
-   
-  
-  }
+
+@media (min-width: 900px){
+
+body[burger-menu] .menu{
+    height: 1400px;
+    width: 900px;
+}
+.carre{
+    height: 500px;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+}
+.bouton__menu{
+    left: 350px;
+}
+}
+@media (min-width: 1200px){
+    
+    .logo{
+        width: 90px;
+        height: 90px;
+        left: 50px;
+        bottom: 15px;
+    }
+    .bouton__menu{
+        left: 550px;
+        top: 15px;
+    }
+    body[burger-menu] .menu{
+        height: 1400px;
+        width: 1350px;
+    }
+    .bouton--sombre{
+        right: 90px;
+        top: 10px;
+    }
+    .carre{
+        height: 800px;
+    }
+    .dwm{
+        width: 50px;
+    }
+}
+@media (min-width: 1500px){
+    .logo{
+        width: 150px;
+        height: 150px;
+    }
+    body[burger-menu] .menu{
+        height: 1400px;
+        width: 1950px;
+    }
+    
+}

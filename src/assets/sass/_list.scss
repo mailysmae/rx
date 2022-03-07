@@ -7,13 +7,17 @@
     list-style: none;
    
 }
-.menu__el{
-    position: relative;
-    left: 10px;
-    bottom: 10px;
 
+.menu__list a:hover{
+    color: var(--color-secondary);
+}
+[color-theme="sombre"] .menu__list a:hover{
+    color: var(--color-secondary);
 }
 .menu__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     position: relative;
     list-style: none;
     
@@ -31,6 +35,7 @@
 /*reseaux*/
 
   .reseau{
+      position: relative;
       list-style: none;
       display: flex; 
       flex-direction: row;
@@ -39,7 +44,7 @@
   }
   .reseau__el {
      padding: 10px;
-  
+    
   }
   
   .reseau__el a{
@@ -115,7 +120,36 @@
   [color-theme="sombre"] .reseau__el--behance a:hover{
       background-image: url(../images/reseaux/behoverd.png);
   }
-@media (min-width: 600px){
+/*tablette*/
+@media (min-width: 900px){
+    .menu__item{
+        left: 250px;
+    }
+    .menu__el {
+        padding: 50px;
+    }
+}
+@media (min-width: 1200px){
+    .reseau{
+        bottom: 10px;
+    }
+  .reseau__el a{
+    width: 30px;
+    height: 30px;
+  }
+ .menu__el {
+    padding: 80px;
+ }
+ .menu__item{
+    left: 420px;
+    top: 450px;
+    font-size: 50px;
+}
 
-  
+}
+@media (min-width: 1500px){
+.menu__item{
+    left: 650px;
+    top: 450px;
+}
 }

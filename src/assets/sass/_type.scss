@@ -6,7 +6,7 @@ typo
 body{
     background-color: var(--color-bg);
     font-family: v.$font-text;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.4;
     font-weight: 400;
     color: var(--color-texte); 
@@ -18,4 +18,59 @@ body{
 .title,
 p{
     margin-left: 40px;
+}
+p{
+    padding: 40px;
+}
+.title{
+    font-size: 50px;
+    padding: 10px;
+}
+.title__sous{
+    font-size: 30px;
+}
+.case{
+    color: var(--color-text-offset);
+    cursor: pointer;
+}
+.evidence a:hover{
+    color: black;
+}
+[color-theme="sombre"] .evidence a:hover{
+    color: var(--color-secondary);
+}
+.copy{
+    padding: 10px;
+}
+
+@media (min-width: 900px){
+    .title{
+       margin-left: 70px;
+    }
+    p{
+        padding: 120px;
+    }
+    .copy{
+        padding: 20px;
+    }
+  
+}
+@media (min-width: 1200px){
+    body{
+        font-size: 26px;
+    }
+    .title{
+        font-size: 100px;
+        margin-left: 100px;
+        padding: 0;
+     }
+     .title__sous{
+         font-size: 50px;
+     }
+     p{
+         padding: 200px;
+     }
+    .copy{
+        padding: 20px;
+    }
 }
