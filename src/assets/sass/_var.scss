@@ -9,12 +9,14 @@
     --color-texte: #000000;
     --color-text-offset:#61008C;
     --color-secondary: #8c002b;
+    --image-menu: url(../images/menu/closewhite.png);
 }
 [color-theme="sombre"]{
     --color-bg: #010101;
     --color-texte: #fefefe;
     --color-text-offset: #ffcc5A;
     --color-secondary: #5affc9;
+     --image-menu: url(../images/menu/close.png);
 }
 
 /*type*/

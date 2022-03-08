@@ -5,7 +5,7 @@
 .section{
     padding: 20px;
     margin: auto;
-    
+   
 }
 .section--header{
    max-width: 100%;
@@ -145,12 +145,15 @@ body[burger-menu] .menu{
     height: 1000px;
     width: 420px;
     background: var(--color-text-offset);
+    z-index: 1;
 }
-
+body[burger-menu] .menu a{
+   color: var(--color-bg);
+}
 body[burger-menu] .bouton__menu{
-    background-image: url(../images/menu/menu.png);
+    background-image: var(--image-menu);
+    
 }
-
 
 /*liens*/
 a{

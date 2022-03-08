@@ -144,6 +144,14 @@
       position: relative;
       left: 10px;
   }
+  @media (max-width: 800px){
+    .menu__list--typo,
+    .menu__list--picto,
+    .menu__list--reseaux{
+    flex-direction: column;
+    left: 30px;
+    }
+}
 /*tablette*/
 @media (min-width: 900px){
     .menu__item{

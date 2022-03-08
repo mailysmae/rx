@@ -12,6 +12,7 @@ body{
     color: var(--color-texte); 
     padding: 0;
     margin: 0;
+    
    
 }
 
@@ -49,6 +50,9 @@ body{
 .para{
     position: relative;
     left: 50px;
+}
+ul{
+    list-style: none;
 }
 
 @media (min-width: 900px){
