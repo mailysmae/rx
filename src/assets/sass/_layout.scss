@@ -5,6 +5,7 @@
 .section{
     padding: 20px;
     margin: auto;
+    
 }
 .section--header{
    max-width: 100%;
@@ -22,6 +23,7 @@
     justify-content: space-between;
     
 }
+
 /*images*/
 img{
     max-width: 100%;
@@ -58,6 +60,17 @@ img{
 [color-theme="sombre"] .carre{
 
     background-image: url(../images/pcd.svg);
+}
+.darkmode,
+.menuui{
+    width: 50px;
+    height: 50px;
+}
+.logoui{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 50px;
 }
 
 /*bouton darkmode et menu*/
@@ -144,6 +157,27 @@ a{
     text-decoration: none;
     color: var(--color-texte);
 }
+/*couleurs*/
+.colors{
+    width: 50px;
+    height: 30px;
+    border-radius: 150px ;
+    border: groove 3px #dfc7e4;
+    display: inline-block;
+    padding: 5px;
+    background-color: var(--color-bg);
+    position: relative;
+    left: 60px;
+}
+.colors--2{
+    background-color: var(--color-text-offset);
+}
+.colors--3{
+    background-color: var(--color-texte);
+}
+.colors--4{
+    background-color: var(--color-secondary);
+}
 
 
 @media (min-width: 900px){
@@ -161,6 +195,13 @@ body[burger-menu] .menu{
 }
 .bouton__menu{
     left: 350px;
+}
+.logoui{
+    left: 80px;
+}
+.colors{
+
+    left: 160px;
 }
 }
 @media (min-width: 1200px){

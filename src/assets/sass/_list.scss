@@ -120,6 +120,30 @@
   [color-theme="sombre"] .reseau__el--behance a:hover{
       background-image: url(../images/reseaux/behoverd.png);
   }
+  /*liste uikit*/
+  .button,
+  .titre,
+  .etat{
+      list-style: none;
+  }
+  .button{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative;
+      left: 20px;
+     
+  }
+  .reseau__ui{
+      width: 50px;
+      height: 50px;
+      position: relative;
+      left: 150px;
+  }
+  .etat{
+      position: relative;
+      left: 10px;
+  }
 /*tablette*/
 @media (min-width: 900px){
     .menu__item{
@@ -127,6 +151,18 @@
     }
     .menu__el {
         padding: 50px;
+    }
+    .button{
+        justify-content: space-around;
+        max-width: 400px;
+    }
+    .etat{
+        left: 40px;
+    }
+    .reseau__ui{
+        width: 70px;
+        height: 70px;
+        left: 150px; 
     }
 }
 @media (min-width: 1200px){
